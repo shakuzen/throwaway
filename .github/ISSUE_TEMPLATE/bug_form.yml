@@ -81,6 +81,6 @@ body:
   - type: textarea
     attributes:
       label: Additional context
-      description: Provide any other context related to the issue such as similar issues in this repository or others.
+      description: Provide any other context related to the issue such as related issues in this repository or others.
     validations:
       required: false
