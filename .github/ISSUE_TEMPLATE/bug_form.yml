@@ -13,7 +13,7 @@ body:
   - type: input
     attributes:
       label: Micrometer version
-      description: What version of Micrometer is affected by the bug? Please try with the latest patch version available in the [supported minor version](https://micrometer.io/docs/support) you are using.
+      description: What version of Micrometer is affected by the bug? Before submitting a bug report, please try with the latest patch version available in the [supported minor version](https://micrometer.io/docs/support) you are using.
       placeholder: 1.7.3
     validations:
       required: true
