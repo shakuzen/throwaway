@@ -19,8 +19,9 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Micrometer module
+      label: Micrometer module affected
       description: Which module is the bug related to?
+      multiple: true
       options:
         - micrometer-core
         - micrometer-bom
@@ -51,7 +52,7 @@ body:
       required: true
   - type: checkboxes
     attributes:
-      label: Operating system
+      label: Operating system(s) affected
       description: On which operating systems is the issue reproducible?
       options:
         - label: Linux
