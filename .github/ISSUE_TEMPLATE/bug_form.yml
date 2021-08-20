@@ -60,7 +60,7 @@ body:
   - type: textarea
     attributes:
       label: Java version
-      description: What version of Java is used to run the application with the bug? Please provide the output of the `java -version` command.
+      description: What version of Java is used to run the application with the bug? Ideally provide the output of the `java -version` command.
       placeholder: |
         openjdk version "16.0.1" 2021-04-20
         OpenJDK Runtime Environment (build 16.0.1+9)
