@@ -10,3 +10,10 @@ body:
       options:
         - label: I have searched the existing issues
           required: true
+  - type: input
+    attributes:
+      label: Micrometer version
+      description: What version of Micrometer is affected by the bug? Please try with the latest patch version available in the [supported minor version](https://micrometer.io/docs/support) you are using.
+      placeholder: 1.7.3
+    validations:
+      required: true
