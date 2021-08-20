@@ -17,6 +17,38 @@ body:
       placeholder: 1.7.3
     validations:
       required: true
+  - type: dropdown
+    attributes:
+      label: Micrometer module
+      description: Which module is the bug related to?
+      options:
+        - micrometer-core
+        - micrometer-bom
+        - micrometer-jersey2
+        - micrometer-registry-appoptics
+        - micrometer-registry-atlas
+        - micrometer-registry-azure-monitor
+        - micrometer-registry-cloudwatch
+        - micrometer-registry-cloudwatch2
+        - micrometer-registry-datadog
+        - micrometer-registry-dynatrace
+        - micrometer-registry-elastic
+        - micrometer-registry-ganglia
+        - micrometer-registry-graphite
+        - micrometer-registry-health
+        - micrometer-registry-humio
+        - micrometer-registry-influx
+        - micrometer-registry-jmx
+        - micrometer-registry-kairos
+        - micrometer-registry-new-relic
+        - micrometer-registry-opentsdb
+        - micrometer-registry-prometheus
+        - micrometer-registry-signalfx
+        - micrometer-registry-stackdriver
+        - micrometer-registry-statsd
+        - micrometer-registry-wavefront
+    validations:
+      required: true
   - type: checkboxes
     attributes:
       label: Operating system
@@ -36,3 +68,18 @@ body:
       render: ''
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Issue reproduction instructions
+      description: |
+        How can the unexpected behavior be reproduced? What is the expected behavior?
+        Ideally provide unit test code that demonstrates the issue or a link to a public source code repository with a minimal sample project that can be run to reproduce.
+        Without a reliable way to reproduce the issue, it is hard to reliably fix or understand the root cause.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Provide any other context related to the issue such as similar issues in this repository or others.
+    validations:
+      required: false
