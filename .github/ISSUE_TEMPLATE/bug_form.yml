@@ -17,3 +17,21 @@ body:
       placeholder: 1.7.3
     validations:
       required: true
+  - type: checkboxes
+    attributes:
+      label: Operating system
+      description: On which operating systems is the issue reproducible?
+      options:
+        - label: Linux
+        - label: macOS
+        - label: Windows
+  - type: textarea
+    attributes:
+      label: Java version
+      description: What version of Java is used to run the application with the bug? Please provide the output of the `java -version` command.
+      placeholder: |
+        openjdk version "16.0.1" 2021-04-20
+        OpenJDK Runtime Environment (build 16.0.1+9)
+        OpenJDK 64-Bit Server VM (build 16.0.1+9, mixed mode, sharing)
+    validations:
+      required: true
